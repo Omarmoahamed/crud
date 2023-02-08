@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <h2 class=" my-5">Bookmarker</h2>
+                <div class="upperline w-100 my-3"></div>
+                <div class="bookinfo col-md-12 text-center ">
+                    
+                <form action="" class="  py-5  d-flex  text-center flex-column  align-items-center  ">
+
+                  <label for="" class=" col-md-12 py-5">sitename</label>
+                  
+                  <input type="text" placeholder="site name" class="sitename rounded  col-md-10">
+                  <label for="" class="col-md-12 py-5">site url</label>
+                  
+                  <input type="text" placeholder="website url" class="url rounded col-md-10">
+
+
+                  <button class="sbbutton  bg-info py-2 col-md-1 rounded my-3 " onclick="addlinks()">Submit</button>
+                  <button class="sbedit  bg-info py-2 col-md-1 rounded my-3   d-none" onclick="addupdate()">Add update</button>
+                  <button class="sbcancel   py-2 col-md-1 rounded my-3   d-none" onclick="cancel()">cancel</button>
+
+            
+                </form>
+                    
+
+
+
+                </div>
+                <div class="downline w-100 my-3"></div>
+
+                <table class=" table col-md-3 my-4">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Visit site</th>
+                            <th>update</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tablecontent">
+                        <tr>
+                            <td></td>
+                            <td><a href=""><button class=" bg-danger py-2 px-3 rounded ">visit</button></a></td>
+                            <td><button class="btnupdate rounded py-2 px-3" onclick="update(index); updateindex(index)">update</button></td>
+                            
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      
+
+
+
+
+
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

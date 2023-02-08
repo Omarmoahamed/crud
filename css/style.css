@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.upperline{
+
+    height: 1px;
+    background-color: black;
+}
+
+.downline{
+
+    height: 1px;
+    background-color: black;
+}
+
+.bookinfo{
+
+    background-color: rgb(238, 238, 238);
+}
+
+
+.sbcancel{
+
+    background-color: rgb(246, 78, 17);
+}
+
+
+.btnupdate{
+
+    background-color: gold;
+}
