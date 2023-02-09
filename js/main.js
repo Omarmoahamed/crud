@@ -47,11 +47,10 @@ function displayproducts(arr)
     {
          temp += `  <tr>
          <td>${arr[i].name}</td>
-         <td><a href="${arr[i].url}"><button class=" bg-danger py-2 px-3 rounded ">visit</button></a></td>
+         <td><a href="${arr[i].url}"><button class=" sbvisit py-2 px-3 rounded ">visit</button></a></td>
          <td><button class="btnupdate rounded py-2 px-3" onclick="update(${i}); updateindex(${i})">update</button></td>
+         <td><button class=" bg-danger rounded py-2 px-3" onclick="Delete(${i})">Delete</button></td>
      </tr>`
-
-
 
     }
   document.querySelector(".tablecontent").innerHTML = temp;
@@ -83,6 +82,15 @@ function update(index)
 
     
    
+}
+
+function Delete(deleteindex){
+
+   lcontainer.splice(deleteindex,1);
+
+   localStorage.setItem("links", JSON.stringify(lcontainer));
+
+    displayproducts(lcontainer);
 }
 
 
@@ -118,8 +126,8 @@ function cancel()
 }
 
 console.log(ind);
-function change(){
-    ind = 8;
+function change(int){
+   int = 9;
 }
 
 var y =ind;
