@@ -47,7 +47,7 @@ function displayproducts(arr)
     {
          temp += `  <tr>
          <td>${arr[i].name}</td>
-         <td><a href="${arr[i].url}"><button class=" sbvisit py-2 px-3 rounded ">visit</button></a></td>
+         <td><a href="${arr[i].url}" target="_blank" rel="noopener noreferrer"><button class=" sbvisit py-2 px-3 rounded " >visit</button></a></td>
          <td><button class="btnupdate rounded py-2 px-3" onclick="update(${i}); updateindex(${i})">update</button></td>
          <td><button class=" bg-danger rounded py-2 px-3" onclick="Delete(${i})">Delete</button></td>
      </tr>`
